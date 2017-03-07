@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_background">
+    <!-- padding 内边距   layout_margin 外边距
+        android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp" >
+        <TextView
+            android:text="@string/inter_detector_text"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/InterDetector"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:background="#FDEEDE"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/my_space"
+            android:id="@+id/userspace_name"
+            android:textSize="25sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/InterDetector"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/getUpTime"
+            android:src="@drawable/ic_clock_strip_desk_clock"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/getUpTime"
+            android:layout_alignEnd="@+id/getUpTime" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="起床记录"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/getUpTime"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_friends"
+            android:layout_below="@+id/getUpTime"
+            android:layout_alignLeft="@+id/getUpTime"
+            android:layout_alignStart="@+id/getUpTime"
+            android:layout_marginTop="44dp"
+            android:id="@+id/friendImageView"
+            android:layout_alignRight="@+id/getUpTime"
+            android:layout_alignEnd="@+id/getUpTime" />
+
+        <TextView
+            android:text="好友信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friendImageView"
+            android:layout_alignLeft="@+id/friendImageView"
+            android:layout_alignStart="@+id/friendImageView"
+            android:id="@+id/friendsTextView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/exit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_marginBottom="47dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="退出登录"
+            android:id="@+id/textView3"
+            android:layout_marginRight="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="个人信息"
+
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_alignBaseline="@+id/friendsTextView"
+            android:layout_alignBottom="@+id/friendsTextView"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit_main"
+            android:src="@drawable/exit_main"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignLeft="@+id/friendsTextView"
+            android:layout_alignStart="@+id/friendsTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="返回闹钟"
+            android:id="@+id/return_main"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/exit_main"
+            android:layout_alignStart="@+id/exit_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="手机时间"
+
+            android:id="@+id/textView7"
+            android:layout_gravity="center"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userInfo"
+            android:src="@drawable/btn_login"
+            android:layout_gravity="right"
+            android:layout_alignTop="@+id/friendImageView"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank"
+            android:src="@drawable/rank"
+            android:layout_gravity="right"
+            android:layout_alignBottom="@+id/getUpTime"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:text="睡眠历史"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/sleep_history_image"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_history_image"
+            android:src="@drawable/sleep_history_icon"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@+id/rank"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="我的排行"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/sleep_history_image"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneIcon"
+            android:src="@drawable/phone"
+            android:layout_gravity="right"
+            android:layout_above="@+id/textView7"
+            android:layout_alignRight="@+id/textView7"
+            android:layout_alignEnd="@+id/textView7"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutUs"
+            android:src="@drawable/about_us"
+            android:layout_gravity="right"
+            android:layout_above="@+id/textView3"
+            android:layout_alignRight="@+id/sleep_history_image"
+            android:layout_alignEnd="@+id/sleep_history_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="关于我们"
+
+            android:id="@+id/about_us"
+            android:layout_gravity="center"
+            android:layout_below="@+id/aboutUs"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
